@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  background-color: palegoldenrod;
+}
+.header {
+  min-height: 40px;
+  text-align: center;
+  padding: 1.5rem;
+}
+figure {
+  background-color: #fff;
+  width: 180px;
+  border: 1px solid #777;
+  padding: 0.5rem;
+  margin: 0.25rem;
+}
+
+figcaption {
+  text-align: center;
+  padding: 0.5rem 0.125rem;
+}
+ /* 4px 6px 5px 2px #565 */
+figure img {
+  /* display: block; */
+  width: 100%;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  background: #111;
+  width: 90vw;
+  max-width: 900px;
+  margin: auto;
+  justify-content: center;
+  padding: 1rem 0px;
+}
+
+footer {
+  padding: 1rem;
+  min-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.credit {
+  font-size: 1.25rem;
+}
+.heart {
+  font-size: 2rem;
+  color: red;
+}
+
+.credit a {
+  text-decoration: none;
+  color: blue;
+}
+.credit a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 915px) {
+  figure {
+    width: 200px;
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  figure {
+    width: 250px;
+  }
+  figcaption {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  figure {
+    width: 340px;
+  }
+  figcaption {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (max-width: 690px) {
+  .gallery {
+    width: 100%;
+  }
+}
